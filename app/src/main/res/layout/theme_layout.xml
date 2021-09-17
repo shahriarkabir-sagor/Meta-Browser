@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<RadioGroup
+		android:orientation="vertical"
+		android:checkedButton="@+id/lightModeId"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<RadioButton
+			android:id="@+id/lightModeId"
+			android:text="Light"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+
+		<RadioButton
+			android:text="Dark"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+
+	</RadioGroup>
+
+</LinearLayout>
+

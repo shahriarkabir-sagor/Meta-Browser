@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<TextView
+		android:text="Mange settings"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent">
+
+			<TextView
+				android:onClick="OnPrefClick"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Choose Search Engine"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent">
+
+			<TextView
+				android:onClick="OnPrefClick"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Choose Theme"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Privacy"
+			android:onClick="OnPrefClick"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Security"
+			android:onClick="OnPrefClick"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Notification"
+			android:onClick="OnPrefClick"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Homepage"
+			android:onClick="OnPrefClick"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Accessibility"
+			android:onClick="OnPrefClick"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Languages"
+			android:onClick="OnPrefClick"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Lite Mode"
+			android:onClick="OnPrefClick"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Downloads"
+			android:onClick="OnPrefClick"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="About Meta Browser"
+			android:onClick="OnPrefClick"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

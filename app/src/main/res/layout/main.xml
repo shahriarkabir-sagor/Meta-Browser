@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<androidx.cardview.widget.CardView
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		app:cardBackgroundColor="@color/colorPrimaryDark">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<ProgressBar
+				android:min="0"
+				android:max="100"
+				android:backgroundTint="@color/lightwhite"
+				android:layout_width="match_parent"
+				style="?android:attr/progressBarStyleHorizontal"
+				android:layout_height="5dp"
+				android:id="@+id/mainProgressBarId"
+				android:visibility="gone"/>
+
+			<LinearLayout
+				android:layout_below="@id/mainProgressBarId"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+				<WebView
+					android:layout_width="match_parent"
+					android:layout_height="0dp"
+					android:layout_weight="1.0"
+					android:id="@+id/mainWebView"
+					android:visibility="gone"/>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="match_parent"
+					android:layout_height="0dp"
+					android:layout_weight="1.0"
+					android:id="@+id/startPageId"
+					android:gravity="center_horizontal">
+
+					<ImageView
+						android:src="@drawable/logo_1"
+						android:layout_width="120dp"
+						android:layout_height="100dp"
+						android:layout_gravity="center_horizontal"
+						android:padding="10dp"/>
+
+					<androidx.cardview.widget.CardView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:elevation="4dp"
+						app:cardBackgroundColor="@color/lightwhite"
+						app:cardCornerRadius="30dp"
+						app:cardUseCompatPadding="true">
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:orientation="vertical"
+							android:gravity="center"
+							android:padding="10dp">
+
+							<LinearLayout
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content">
+
+								<ImageView
+									android:src="@drawable/fb"
+									android:layout_width="60dp"
+									android:layout_height="60dp"
+									android:padding="10dp"
+									android:layout_marginRight="20dp"
+									android:id="@+id/fb"
+									android:scaleType="fitXY"/>
+
+								<ImageView
+									android:src="@drawable/twitter"
+									android:layout_width="60dp"
+									android:layout_height="60dp"
+									android:padding="10dp"
+									android:layout_marginRight="20dp"
+									android:id="@+id/twitter"
+									android:scaleType="fitXY"/>
+
+								<ImageView
+									android:src="@drawable/ig"
+									android:layout_width="60dp"
+									android:layout_height="60dp"
+									android:padding="10dp"
+									android:id="@+id/ig"
+									android:scaleType="fitXY"/>
+
+							</LinearLayout>
+
+							<LinearLayout
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content">
+
+								<ImageView
+									android:src="@drawable/fb"
+									android:layout_width="60dp"
+									android:layout_height="60dp"
+									android:padding="10dp"
+									android:layout_marginRight="20dp"
+									android:scaleType="fitXY"/>
+
+								<ImageView
+									android:src="@drawable/twitter"
+									android:layout_width="60dp"
+									android:layout_height="60dp"
+									android:padding="10dp"
+									android:layout_marginRight="20dp"
+									android:scaleType="fitXY"/>
+
+								<ImageView
+									android:src="@drawable/ig"
+									android:layout_width="60dp"
+									android:layout_height="60dp"
+									android:padding="10dp"
+									android:scaleType="fitXY"/>
+
+							</LinearLayout>
+
+							<LinearLayout
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content">
+
+								<ImageView
+									android:src="@drawable/fb"
+									android:layout_width="60dp"
+									android:layout_height="60dp"
+									android:padding="10dp"
+									android:layout_marginRight="20dp"
+									android:scaleType="fitXY"/>
+
+								<ImageView
+									android:src="@drawable/twitter"
+									android:layout_width="60dp"
+									android:layout_height="60dp"
+									android:padding="10dp"
+									android:layout_marginRight="20dp"
+									android:scaleType="fitXY"/>
+
+								<ImageView
+									android:src="@drawable/ig"
+									android:layout_width="60dp"
+									android:layout_height="60dp"
+									android:padding="10dp"
+									android:scaleType="fitXY"/>
+
+							</LinearLayout>
+
+						</LinearLayout>
+
+					</androidx.cardview.widget.CardView>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_gravity="bottom"
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:weightSum="5"
+					android:gravity="center_horizontal">
+
+					<ImageView
+						android:id="@+id/backwardIconId"
+						android:onClick="onBrFtrClick"
+						android:layout_weight="1"
+						android:layout_width="0dp"
+						android:layout_height="30dp"
+						android:padding="5dp"
+						android:layout_gravity="center_vertical"
+						android:src="@drawable/undo_blue"
+						android:background="@drawable/ripple_effect_bg"/>
+
+					<ImageView
+						android:id="@+id/forwardIconId"
+						android:onClick="onBrFtrClick"
+						android:layout_weight="1"
+						android:layout_width="0dp"
+						android:layout_height="30dp"
+						android:padding="5dp"
+						android:layout_gravity="center_vertical"
+						android:src="@drawable/redo_blue"
+						android:background="@drawable/ripple_effect_bg"/>
+
+					<LinearLayout
+						android:id="@+id/tabIconId"
+						android:onClick="onBrFtrClick"
+						android:layout_weight="1"
+						android:layout_width="0dp"
+						android:layout_height="30dp"
+						android:padding="2.5dp"
+						android:layout_gravity="center"
+						android:gravity="center_horizontal"
+						android:background="@drawable/ripple_effect_bg">
+
+						<TextView
+							android:gravity="center"
+							android:layout_width="wrap_content"
+							android:layout_height="match_parent"
+							android:text="0"
+							android:id="@+id/tabId"
+							android:textColor="@color/newblue"
+							android:background="@drawable/tab"/>
+
+					</LinearLayout>
+
+					<ImageView
+						android:id="@+id/srcViewerIconId"
+						android:onClick="onBrFtrClick"
+						android:layout_weight="1"
+						android:layout_width="0dp"
+						android:layout_height="30dp"
+						android:padding="5dp"
+						android:layout_gravity="center_vertical"
+						android:src="@drawable/cursor"
+						android:background="@drawable/ripple_effect_bg"/>
+
+					<ImageView
+						android:id="@+id/inspectIconId"
+						android:onClick="onBrFtrClick"
+						android:layout_weight="1"
+						android:layout_width="0dp"
+						android:layout_height="30dp"
+						android:padding="5dp"
+						android:layout_gravity="center_vertical"
+						android:src="@drawable/programming"
+						android:background="@drawable/ripple_effect_bg"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</RelativeLayout>
+
+	</androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+

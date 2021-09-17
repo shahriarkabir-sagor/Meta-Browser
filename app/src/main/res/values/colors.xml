@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#07112a</color>
+    <color name="colorPrimaryDark">#07112a</color>
+    <color name="colorAccent">#ff835f</color>
+    <color name="colorControlHighlight">#FFCCBC</color>
+   	<color name="colorControlNormal">#FF5722</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="textHint">#957468</color>
+    <color name="orange">#ff835f</color>
+    <color name="lightblue">#111B35</color>
+    <color name="lightwhite">#33FFFFFF</color>
+	<color name="newblue">#727A87</color>
+	<color name="skyblue">#28B6F6</color>
+    
+    
+</resources>
