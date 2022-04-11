@@ -3,4 +3,4 @@ Meta Browser is an app build for experimental or testing purpose to give ability
 
 Here is some screenshot.
 
-Download it from release [page ->](https://url:here)
+Download it from release [page ->](https://github.com/azclub-ltd/Meta-Browser/releases/tag/Meta-Browser-experimental)
