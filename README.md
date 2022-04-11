@@ -6,12 +6,12 @@ Here is some screenshot.
 Download it from release [page ->](https://github.com/azclub-ltd/Meta-Browser/releases/tag/Meta-Browser-experimental)
 
 ### What it can do:-
-[+] It can browse url]
-[+] It can edit source code
-[+] Go Forward, Backward
-[+] Reload web page
+- [x] It can browse url]
+- [x] It can edit source code
+- [x] Go Forward, Backward
+- [x] Reload web page
 
 ### What it can't do:-
-[-] Open Multiple tabs
-[-] Search inside source editor
-[-] Advance browser job
+- [ ] Open Multiple tabs
+- [ ] Search inside source editor
+- [ ] Advance browser job
